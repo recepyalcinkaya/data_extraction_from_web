@@ -1,9 +1,9 @@
-Kod, Science Robotics sayfasındaki makale başlıklarını çekerek makaleler.xlsx isimli bir Excel dosyasına kaydedecektir.
-Kod ayrıca bir sonraki sayfanın bağlantısını alıp ekrana yazdırır ve tarayıcıyı bu sayfaya yönlendirir.
+The code will extract the article titles from the Science Robotics page and save them to an Excel file named articles.xlsx.
+The code will also retrieve the link to the next page, display it on the screen, and redirect the browser to that page.
 
-Çalışma Prensibi:
-Selenium ile hedef sayfa açılır ve sayfanın HTML içeriği alınır.
-BeautifulSoup ile sayfa parse edilerek makale başlıkları seçilir.
-Pandas ile başlıklar bir DataFrame'e dönüştürülerek Excel dosyasına kaydedilir.
-Eğer sayfada "Sonraki Sayfa" düğmesi varsa, bağlantısı çekilir ve bir sonraki sayfa yüklenir.
-Tarayıcı oturumu kapatılır.
+How It Works:
+The target page is opened using Selenium, and the page’s HTML content is retrieved.
+BeautifulSoup is used to parse the page and extract the article titles.
+Pandas is used to convert the titles into a DataFrame and save them to an Excel file.
+If there is a “Next Page” button on the page, its link is retrieved and the next page is loaded.
+The browser session is closed.
